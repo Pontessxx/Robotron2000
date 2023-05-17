@@ -16,9 +16,10 @@ function dizOi(nome){
 dizOi("pontes")
 
 //soma 'str' +1 => '00111'
-const subtrair = document.getElementById('subtrair'),
-     somar = document.getElementById('somar'),
-     braco = document.getElementById('braco')
+const subtrair = document.querySelector('#subtrair'),
+     somar = document.querySelector('#somar'),
+     braco = document.querySelector('#braco'),
+     controle = document.querySelectorAll('.controle-ajuste')
 
 somar.addEventListener('click', ()=>{manipulaDados('somar')});
 subtrair.addEventListener('click', ()=>{manipulaDados('subtrair')});
