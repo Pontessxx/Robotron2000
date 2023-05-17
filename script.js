@@ -16,23 +16,22 @@ function dizOi(nome){
 dizOi("pontes")
 
 //soma 'str' +1 => '00111'
-const subtrair = document.querySelector('#subtrair'),
+/* const subtrair = document.querySelector('#subtrair'),
      somar = document.querySelector('#somar'),
-     braco = document.querySelector('#braco'),
-     controle = document.querySelectorAll('.controle-ajuste')
+     braco = document.querySelector('#braco'), */
+const controle = document.querySelectorAll('.controle-ajuste')
 
 controle.forEach((elemento)=>{
     elemento.addEventListener('click',(evento)=>{
-        manipulaDados(evento.target.textContent)
+        manipulaDados(evento.target.textContent, evento.target.parentNode)
     })
 })
-/* somar.addEventListener('click', ()=>{manipulaDados('somar')});
-subtrair.addEventListener('click', ()=>{manipulaDados('subtrair')});
- */
-function manipulaDados(operacao){
+
+function manipulaDados(operacao, controle){
+    const peca = controle.querySelector('.controle-contador')
     if(operacao === '-'){
-        braco.value = parseInt(braco.value) - 1;
+        peca.value = parseInt(peca.value) - 1;
     }else{
-        braco.value = parseInt(braco.value) + 1;
+        peca.value = parseInt(peca.value) + 1;
     }
 };
