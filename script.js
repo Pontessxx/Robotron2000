@@ -35,3 +35,6 @@ function manipulaDados(operacao, controle){
         peca.value = parseInt(peca.value) + 1;
     }
 };
+/* Aprendemos como utilizar a propriedade parentNode;
+Definimos o que é data-attributes;
+Criamos funções para manipular elementos no DOM com data-attributes. */
