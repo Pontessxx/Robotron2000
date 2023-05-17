@@ -14,3 +14,15 @@ function dizOi(nome){
     console.log(`Olá, ${nome}`)
 }
 dizOi("pontes")
+
+//soma 'str' +1 => '00111'
+const subtrair = document.getElementById('subtrair'),
+     somar = document.getElementById('somar'),
+     braco = document.getElementById('braco')
+
+somar.addEventListener('click', (evento)=>{
+    braco.value = parseInt(braco.value) + 1;
+})
+subtrair.addEventListener('click', (evento)=>{
+    braco.value = parseInt(braco.value) - 1;
+})
